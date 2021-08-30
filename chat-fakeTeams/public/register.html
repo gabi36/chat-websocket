@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+          integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+          crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <title>FakeTeams App</title>
+
+</head>
+
+<body>
+<div class="join-container">
+  <header class="join-header">
+    <img src="https://img.icons8.com/clouds/100/000000/microsoft-teams-2019.png"/> <h1>FakeTeams</h1>
+  </header>
+
+  <main class="join-main">
+    <form id = "register-form">
+      <div class="form-control">
+
+        <input
+                type="text"
+                name="username"
+                id="username_register"
+                placeholder="Enter username..."
+                required
+        />
+
+      </div>
+      <button type="submit" class="btnRegister" style="width:150px">Add user</button>
+
+
+    </form>
+
+    <form id="username_register_delete">
+      <div class="form-control">
+
+        <input
+                type="text"
+                name="username"
+                id="username_register_deleted"
+                placeholder="Enter username..."
+                required
+        />
+
+      </div>
+      <button type="submit" class="btnRegisterDelete" style="width:150px">Delete user</button>
+    </form>
+
+    <form id="username_register_uppdate">
+      <div class="form-control">
+
+        <input
+                type="text"
+                name="username"
+                id="username_old_username"
+                placeholder="Enter old username..."
+                required
+        />
+
+      </div>
+
+      <div class="form-control">
+
+        <input
+                type="text"
+                name="username"
+                id="username_new_username"
+                placeholder="Enter new username..."
+                required
+        />
+
+      </div>
+      <button type="submit" class="btnRegisterUpdate" style="width:150px">Update user</button>
+    </form>
+
+    <form action="index.html">
+      <button type="submit" class="btn" style="width:150px">Back</button>
+    </form>
+  </main>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/main1.js"></script>
+
+</body>
+</html>
